@@ -1,6 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Bilapower</string>
 
+    <string name="app_name">ListViewShow</string>
+    <string name="hello_listview">Hello ListView!</string>
+    <string name="action_add">Add film</string>
+
+    <string-array name="fruit_basket">
+        <item>Atlants Olía</item>
+        <item>Olís</item>
+        <item>N1</item>
+        <item>Orkan</item>
+        <item>Shell</item>
+        <item>Ódýrt Bensín</item>
+    </string-array>
+
+    <string name="title_activity_go__to__map">Info</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="title_activity_power__adapter">Settings</string>
+
 </resources>
