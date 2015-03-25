@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">ListViewShow</string>
+    <string name="app_name">Bílapower</string>
     <string name="hello_listview">Hello ListView!</string>
     <string name="action_add">Add film</string>
 
