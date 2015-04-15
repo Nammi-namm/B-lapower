@@ -33,12 +33,13 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyA1Fy_wSVvD_xUOr5QL_JYA6eD9JSAIpZc" />
 
         <activity
             android:name=".Go_To_Map"
             android:label="@string/title_activity_go__to__map" >
         </activity>
+
     </application>
 
 </manifest>
