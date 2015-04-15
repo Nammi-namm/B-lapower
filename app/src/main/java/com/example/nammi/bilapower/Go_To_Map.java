@@ -61,6 +61,6 @@ public class Go_To_Map extends FragmentActivity {
      * This should only be called once and when we are sure that {@link #mMap} is not null.
      */
     private void setUpMap() {
-        mMap.addMarker(new MarkerOptions().position(new LatLng(65, -16)).title("Marker").icon(BitmapDescriptorFactory.fromResource(R.drawable.olis2)));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(65, -16)).title("Marker").icon(BitmapDescriptorFactory.fromResource(R.drawable.olissmall)));
     }
 }
