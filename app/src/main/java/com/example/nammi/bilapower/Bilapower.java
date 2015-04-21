@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -67,13 +68,14 @@ public class Bilapower extends ActionBarActivity {
                     startActivity(intent);
                 }
 */
-                myIntent.putExtra("key",theFruit);
+                myIntent.putExtra("key", theFruit);
                 startActivityForResult(myIntent, 0);
                 // Sýnum nafnið
                 //Toast.makeText(getApplicationContext(), "Þetta er " + theFruit + "!", Toast.LENGTH_SHORT).show();
             }
         };
         listView.setOnItemClickListener(listener); // Tengjum saman ListView og listener
+
 
         int i = 0;
         int n = fruitBasket.length;
@@ -82,10 +84,34 @@ public class Bilapower extends ActionBarActivity {
             String fruit = fruitBasket[i]; // Náum í nafnið á slembnum ávexti
             fruits.add(fruit); // Bætum ávextinum í ArrayListann sem liggur að baki ListView-inu
             i++;
-        }while (i < n);
+        } while (i < n);
 
 
         adapter.notifyDataSetChanged(); // Látum adapterinn vita að gögnin hafi breyst
+
+        final Button button = (Button) findViewById(R.id.btnelectric);
+        final Button buttonclear = (Button) findViewById(R.id.btnmetan);
+
+        buttonclear.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(Bilapower.this, Go_To_Map.class);
+                myIntent.putExtra("key", 10);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+
+        button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(Bilapower.this, Go_To_Map.class);
+                myIntent.putExtra("key", 11);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
 
     }
 
