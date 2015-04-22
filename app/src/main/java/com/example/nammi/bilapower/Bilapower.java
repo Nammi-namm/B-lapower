@@ -97,7 +97,7 @@ public class Bilapower extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(Bilapower.this, Go_To_Map.class);
-                myIntent.putExtra("key", 10);
+                myIntent.putExtra("key", "metan");
                 startActivityForResult(myIntent, 0);
             }
         });
@@ -107,7 +107,7 @@ public class Bilapower extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(Bilapower.this, Go_To_Map.class);
-                myIntent.putExtra("key", 11);
+                myIntent.putExtra("key", "electric");
                 startActivityForResult(myIntent, 0);
             }
 

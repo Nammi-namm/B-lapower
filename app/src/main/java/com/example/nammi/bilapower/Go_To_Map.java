@@ -91,6 +91,10 @@ public class Go_To_Map extends FragmentActivity {
             mMap.addMarker(new MarkerOptions().position(new LatLng(64.1051445, -21.8677166)).title("Marker").icon(BitmapDescriptorFactory.fromResource(R.drawable.shellsmall)));
         }else if (stringData.contains("Ódýrt Bensín")){
             mMap.addMarker(new MarkerOptions().position(new LatLng(64.1397133, -21.9214302)).title("Marker").icon(BitmapDescriptorFactory.fromResource(R.drawable.obsmall)));
+        }else if (stringData.contains("electric")){
+            mMap.addMarker(new MarkerOptions().position(new LatLng(64.1397133, -21.9214302)).title("Marker").icon(BitmapDescriptorFactory.fromResource(R.drawable.electricity)));
+        }else if (stringData.contains("metan")){
+            mMap.addMarker(new MarkerOptions().position(new LatLng(64.1397133, -21.9214302)).title("Marker").icon(BitmapDescriptorFactory.fromResource(R.drawable.metan)));
         }
     }
 }
